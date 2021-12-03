@@ -27,28 +27,59 @@
 		<form action="" method="GET" class="hidden">
 
       <select data-conv-question="Hello! How can I help you" name="category">
-        <option value="WebDevelopment">Website Development ?</option>
-        <option value="DigitalMarketing">Digital Marketing ?</option>
-        <option value="DigitalMarketing" style="margin-left: 2000px;">Digital Marketing ?</option>
+        <option value="WebDevelopment">Mental Fatigue ?</option>
+        <option value="DigitalMarketing">What if I failed this semester?</option>
+        <option value="phyf">Physical Fatigue?</option>
+        
       </select>
+      <!-- <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">I feel Mental Fatigue ?</option>
+        <option value="DigitalMarketing">Digital Marketing ?</option>
+        
+      </select> -->
 
       <div data-conv-fork="category">
         <div data-conv-case="WebDevelopment">
-          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+          <input type="text" name="domainName" data-conv-question="One of the best ways is to create an aligned timetable and keep track of your academic happenings." data-no-answer="true">    
+          <select data-conv-question="more question?">
+            <option value="Yes">More question</option>
+            </select>
+            <select data-conv-question="Choose ur question" name="category">
+                <option value="WebDevelopment">Mental Fatigue ?</option>
+                <option value="DM">What if I failed this semester?</option>
+                <option value="phyf">Physical Fatigue?</option>
+                
+            </select>
+            <div data-conv-fork="category">
+                <div data-conv-case="WebDevelopment">
+                  <input type="text" name="domainName" data-conv-question="One of the best ways is to create an aligned timetable and keep track of your academic happenings." data-no-answer="true">   \
+                  <input type="text" name="domainName" data-conv-question="Ok have a great day." data-no-answer="true"> 
+                  <!-- <input type="text" name="domainName" data-conv-question="Press send button to end converstion.">  -->
+                </div>
+                <div data-conv-case="DM" data-conv-fork="first-question2">
+                    <input type="text" name="companyName" data-conv-question="Failure is often the first step towards success. A failure is no more than a word unless you are learning something from it." data-no-answer="true" > 
+                    <input type="text" name="domainName" data-conv-question="Ok have a great day." data-no-answer="true"> 
+                </div>
+            </div>
+            <!-- <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+                <input type="text" name="companyName" data-conv-question="Failure is often the first step towards success. A failure is no more than a word unless you are learning something from it." data-no-answer="true" >  -->
+
         </div>
         <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
-          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+          <input type="text" name="companyName" data-conv-question="Failure is often the first step towards success. A failure is no more than a word unless you are learning something from it." data-no-answer="true" > 
+          <select data-conv-question="more question?">
+            <option value="Yes">More question</option>
+            </select>
         </div>
       </div>
-
+<!-- 
       <input type="text" name="name" data-conv-question="Please, Enter your name">
 
       <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
 
-      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?"> -->
 
-      <select data-conv-question="Please Conform">
-        <option value="Yes">Conform</option>
+      
       </select>
 
   	</form>
@@ -62,7 +93,7 @@
 			<div class="col-md-auto">
 				<!-- <a href="#!" class="logo"><img src="images/logo.png" alt="logo"></a> -->
 			</div>
-			<div class="col-md-auto">
+			<!-- <div class="col-md-auto">
 				<nav class="main_nav">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -71,22 +102,22 @@
 						<li><a href="#contact">Contact Us</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div> -->
 		</div>		
 	</div>
 </header>	 
 
 <div class="banner d-flex align-items-center"  id="home">
-	<ul class="socila_links">
+	<!-- <ul class="socila_links">
 		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	</ul>	
+	</ul>	 -->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
 				<div class="banner_cont">
-					<h1>John Doe</h1>
+					<h3>Design Thinking Project </h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
 				</div>
 			</div>
