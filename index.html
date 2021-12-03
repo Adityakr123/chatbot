@@ -69,7 +69,7 @@
                             </select>
                         </div>
                         <div data-conv-case="phyf" data-conv-fork="first-question3">
-                            <input type="text" name="companyName" data-conv-question="Failure is great." data-no-answer="true" > 
+                            <input type="text" name="companyName" data-conv-question="" data-no-answer="true" > 
                             <input type="text" name="domainName" data-conv-question="Ok have a great day." data-no-answer="true"> 
                             <select data-conv-question="End Converstion">
                                 <option value="Yes">End</option>
@@ -80,6 +80,7 @@
                 <div data-conv-case="end" data-conv-fork="first-question2">
                     <select data-conv-question="End Converstion">
                         <option value="Yes">End</option>
+    
                     </select>
                 </div>
             </div>
@@ -96,9 +97,50 @@
         </div>
         <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
           <input type="text" name="companyName" data-conv-question="Failure is often the first step towards success. A failure is no more than a word unless you are learning something from it." data-no-answer="true" > 
-          <select data-conv-question="more question?">
+          <select data-conv-question="more question?" name="cate">
             <option value="Yes">More question</option>
-            </select>
+            <option value="end">End Converstion</option>
+        </select>
+        <div data-conv-fork="cate">
+            <div data-conv-case="Yes">
+                <select data-conv-question="Choose ur question" name="categ">
+                    <option value="WebDevelopment">Mental Fatigue ?</option>
+                    <option value="DM">What if I failed this semester?</option>
+                    <option value="phyf">Physical Fatigue?</option>
+                </select>
+                <div data-conv-fork="categ">
+                    <div data-conv-case="WebDevelopment">
+                        <input type="text" name="domainName" data-conv-question="One of the best ways is to create an aligned timetable and keep track of your academic happenings." data-no-answer="true">   \
+                        <input type="text" name="domainName" data-conv-question="Ok have a great day" data-no-answer="true"> 
+                        <select data-conv-question="End Converstion">
+                            <option value="Yes">End</option>
+                        </select>
+                  <!-- <input type="text" name="domainName" data-conv-question="Press send button to end converstion.">  -->
+                    </div>
+                    <div data-conv-case="DM" data-conv-fork="first-question2">
+                        <input type="text" name="companyName" data-conv-question="Failure is often the first step towards success. A failure is no more than a word unless you are learning something from it." data-no-answer="true" > 
+                        <input type="text" name="domainName" data-conv-question="Ok have a great day." data-no-answer="true"> 
+                        <select data-conv-question="End Converstion">
+                            <option value="Yes">End</option>
+                        </select>
+                    </div>
+                    <div data-conv-case="phyf" data-conv-fork="first-question3">
+                        <input type="text" name="companyName" data-conv-question="" data-no-answer="true" > 
+                        <input type="text" name="domainName" data-conv-question="Ok have a great day." data-no-answer="true"> 
+                        <select data-conv-question="End Converstion">
+                            <option value="Yes">End</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div data-conv-case="end" data-conv-fork="first-question2">
+                <select data-conv-question="End Converstion">
+                    <option value="Yes">End</option>
+
+                </select>
+            </div>
+        </div>
+
         </div>
     </div>
     
