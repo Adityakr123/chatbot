@@ -275,20 +275,7 @@ textarea{
 textarea{
 	height: 80px
 }
-input[type="submit"]{
-	border: 0px;
-  color: white;
-  background: #010519;
-  padding: 11px 25px;
-  margin: 0 0 15px 0;
-  font: 14px/20px "Open Sans", sans-serif;
-  height: 42px;
-  outline: none;
-  width: auto;
-  border-radius: 4px;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 
 
 /*ChatBot*/
@@ -314,6 +301,20 @@ input[type="submit"]{
 		transition: all 0.3s ease-out;
 		transform: scaleY(0);
 	}
+	input[type="submit"]{
+		border: 0px;
+	  color: white;
+	  background: #010519;
+	  padding: 1px 25px;
+	  margin: 0 0 15px 0;
+	  font: 14px/20px "Open Sans", sans-serif;
+	  height: 42px;
+	  outline: none;
+	  width: auto;
+	  border-radius: 4px;
+	  text-transform: uppercase;
+	  text-align: center;
+	}
 }
 @media only screen and (min-width: 501px) {
 	.chat_box{
@@ -326,6 +327,20 @@ input[type="submit"]{
 		z-index: 1000;
 		transition: all 0.3s ease-out;
 		transform: scaleY(0);
+	}
+	input[type="submit"]{
+		border: 0px;
+	  color: white;
+	  background: #010519;
+	  padding: 11px 25px;
+	  margin: 0 0 15px 0;
+	  font: 14px/20px "Open Sans", sans-serif;
+	  height: 42px;
+	  outline: none;
+	  width: auto;
+	  border-radius: 4px;
+	  text-transform: uppercase;
+	  text-align: center;
 	}
 }
 
