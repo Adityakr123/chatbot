@@ -354,6 +354,8 @@ textarea{
 	height: 30px;
 	overflow: hidden;
 	resize: none;
+
+
 }
 .hidden{
 	display: none !important;
